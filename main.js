@@ -171,4 +171,86 @@ console.log (FullStackDeveloper);
 //Crea un objeto de nombre Perro que tenga las propiedades: nombre, raza, color y edad con sus respectivos valores
 
 const Perro = {nombre:"Manolo", raza: "pomerania", color: "blanco", edad:"2"};
-console.log (Perro)
+console.log (Perro);
+
+//Crea un objeto de nombre Noticia que tenga las propiedades: titular y cuerpo con sus respectivos valores
+
+const Noticia = {titular:"Titulo", cuerpo:"Hola aquí supuestamente hay un texto"};
+console.log (Noticia);
+
+//Crea un objeto de nombre Persona que tenga las propiedades: nombre, apellidos y edad con sus respectivos valores
+
+const Persona = {nombre: "Gabriel", apellidos: "Tapia Manzanero", edad:"27"};
+console.log (Persona);
+
+//Muestra por consola el nombre de la variable Persona
+
+console.log (Persona);
+
+//Muestra por consola el lenguaje javascript de la variable FullStackDeveloper
+
+console.log (FullStackDeveloper[0]);
+
+//Crea un objeto de nombre Portatil que tenga la propiedad marca, accede a esta propiedad con .marca y muestrala por consola
+
+const Portatil = {marca:"Lenovo"};
+console.log (Portatil.marca);
+
+//Obtén el valor de la propiedad marca del objeto anteriormente creado (Portatil) con ["marca"] y muestrala por consola
+
+console.log (Portatil ["marca"]);
+
+//Crea un objeto de nombre Concierto con una propiedad llamada grupos que es un array, obtén el valor de la propiedad y muestrala por consola
+
+const Concierto = {grupos: ["ska-p","mago de oz","la oreja de van gogh"]};
+console.log (Concierto);
+
+//Crea un objeto de nombre Led, con las propiedades: rojo, verde y azul, obtén el valor de las propiedades guardándolo en la variable array RGB[Rojo, Verde, Azul] y muestra este array por consola
+
+const Led = {rojo: 2, verde: 3, azul: 5};
+console.log (RGB);
+
+//Crea un objeto de nombre O_Error con la propiedad código, obtén el valor de la propiedad y muestrala por consola
+
+const O_Error = {codigo: "oops i did it again"};
+console.log (O_Error.codigo);
+
+//Crea un objeto de nombre Grupo con la propiedad integrantes (array),obtén el valor de la propiedad guardándolo en la variable integrantes y muestra por consola a uno de los integrantes
+
+const Grupo = {integrantes: ["Maritrini", "Pascasio", "Ataulfo"]};
+console.log (integrantes);
+
+//Crea un objeto de nombre Impresora con la propiedad objeto tinta{rojo, verde, azul}, obtén el valor de la propiedad guardándolo en la variable nivelesTinta y muestrala por consola 
+
+const Impresora = {tinta: {rojo: 4, verde: 6, azul:10}};
+const nivelesTinta = Impresora.tinta;
+console.log (nivelesTinta);
+
+//Crea un objeto de nombre Movil con la propiedad especificaciones obtén el valor de la propiedad con ["especificaciones"] guardándolo en la variable especificaciones y muestrala por consola
+
+const Movil = {Especificaciones: "Android 128GB 8GBRAM"};
+console.log (Movil);
+
+//Dado el objeto de nombre Portatil con la propiedad marca, modifica el valor de la propiedad marca por el valor “MSI”, consolea el resultado
+
+Portatil.marca = "MSI";
+console.log (Portatil.marca);
+
+//Dado el objeto de nombre Concierto añade el valor Guns N' Roses a la propiedad grupos, consolea el resultado
+
+Concierto.grupos.push ("Guns N' Roses");
+console.log (Concierto);
+
+//Dado el objeto de nombre Concierto, crea la propiedad fecha, dale un valor y después modifica el valor de la propiedad por el valor new Date() (fecha de hoy), consolea el resultado
+
+Concierto.fecha = "07/09/2015";
+console.log(Concierto);
+Concierto.fecha = new Date();
+console.log(Concierto);
+
+//Dado el objeto de nombre Grupo modifica el valor de la propiedad integrantes quitándole un integrante, consolea el número de integrantes actual (ojo! el número, no los nombres de los integrantes)
+
+Grupo.integrantes.pop ();
+console.log (Grupo.integrantes.length);
+
+
